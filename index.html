@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>flex_sample</title>
+    <style>
+      div{
+        display: flex;
+        margin: 5px;
+        flex-grow: 1;
+        flex-wrap: wrap;
+      }
+    .one{
+      width: 20%;
+    }
+    .one img{
+      width: 100%;
+      height: 330px;
+    }
+
+    @media screen and (max-width:500px) {
+      .one{
+        width:40%;
+      }
+    }
+    </style>
+  </head>
+  <body>
+    <div>
+      <div class="one"><img src="./img1.jpeg" alt="" /></div>
+      <div class="one"><img src="./img2.jpeg" alt="" /></div>
+      <div class="one"><img src="./img3.jpeg" alt=""></div>
+      <div class="one"> <img src="./img4.jpeg" alt=""></div>
+      <div class="one"><img src="./img5.jpeg" alt=""></div>
+
+      <!-- <img src="./img1.jpeg" alt="">
+      <img src="./img2.jpeg" alt="">
+      <img src="./img3.jpeg" alt="">
+      <img src="./img4.jpeg" alt="">
+      <img src="./img5.jpeg" alt=""> -->
+    </div>
+  </body>
+</html>
